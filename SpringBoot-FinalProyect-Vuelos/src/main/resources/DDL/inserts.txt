@@ -1,0 +1,5 @@
+INSERT INTO sprinbootproyectofinal.vuelos (compania, fecha_vuelo, precio, plazas_disponibles) VALUES ('Airline A', '2024-06-10', 300.50, 150);
+INSERT INTO sprinbootproyectofinal.vuelos (compania, fecha_vuelo, precio, plazas_disponibles) VALUES ('Airline B', '2024-06-15', 450.75, 200);
+INSERT INTO sprinbootproyectofinal.vuelos (compania, fecha_vuelo, precio, plazas_disponibles) VALUES ('Airline C', '2024-06-20', 500.00, 100);
+INSERT INTO sprinbootproyectofinal.vuelos (compania, fecha_vuelo, precio, plazas_disponibles) VALUES ('Airline D', '2024-07-01', 350.25, 180);
+INSERT INTO sprinbootproyectofinal.vuelos (compania, fecha_vuelo, precio, plazas_disponibles) VALUES ('Airline E', '2024-07-10', 400.60, 220);
