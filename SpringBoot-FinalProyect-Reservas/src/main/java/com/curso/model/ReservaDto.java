@@ -9,7 +9,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-
+/**
+ * La clase ReservaDto representa una transferencia de datos de una reserva, añadiendo el atributo plazasReservadas
+ * para el correcto funcionamiento del servicio.
+ */
 public class ReservaDto {
 	
 	private int idReserva;

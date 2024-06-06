@@ -16,10 +16,19 @@ public class ReservasServiceImpl implements ReservasService {
 	@Autowired
 	ReservasDao dao;
 	
+	// * RestTemplate se utiliza para realizar llamadas HTTP a servicios web externos.
 	@Autowired
 	RestTemplate restTemplate;
 	
+	/**
+	 * Url del servicio Hotel
+	 * Utilizada para hacer llamadas al servicio de hoteles
+	 */
 	private final static String urlHotel="http://localhost:8080";
+	/**
+	 * Url del servicio Vuelo
+	 * Utilizada para hacer llamadas al servicio de vuelos
+	 */
 	private final static String urlVuelos="http://localhost:8081";
 
 	/**

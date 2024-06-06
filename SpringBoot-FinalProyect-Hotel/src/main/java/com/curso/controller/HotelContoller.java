@@ -17,11 +17,6 @@ public class HotelContoller {
 	@Autowired
 	HotelService service;
 	
-    /**
-     * Devuelve la lista de hoteles existentes en la base de datos.
-     * 
-     * @return una lista de objetos Hotel en formato JSON.
-     */
 	@GetMapping(value="hoteles", produces= MediaType.APPLICATION_JSON_VALUE)
 	public List<Hotel> hoteles(){
 		return service.hoteles();

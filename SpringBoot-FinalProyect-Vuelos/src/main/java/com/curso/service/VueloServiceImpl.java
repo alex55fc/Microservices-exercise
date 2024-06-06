@@ -14,11 +14,7 @@ public class VueloServiceImpl implements VueloService {
 	@Autowired
 	VueloDao dao;
 	
-	/**
-	 * Devuelve la lista de vuelos de la base de datos
-	 * 
-	 * @return lista de vuelos.
-	 */
+
 	@Override
 	public List<Vuelo> vuelos() {
 		return dao.findAll();

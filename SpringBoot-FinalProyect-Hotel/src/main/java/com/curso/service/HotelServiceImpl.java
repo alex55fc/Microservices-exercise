@@ -14,12 +14,6 @@ public class HotelServiceImpl implements HotelService {
 	@Autowired 
 	HotelDao dao;
 
-
-	/**
-	 * Devuelve la lista de hoteles existentes en la base de datos
-	 *   
-	 * @return la lista de hoteles.
-	 */
 	@Override
 	public List<Hotel> hoteles() {
 		return dao.findAll();
