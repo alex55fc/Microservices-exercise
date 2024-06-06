@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "b58698e6-d2a5-4f3b-82af-dc38e0f5b626",
+		"name": "Agencia viajes",
+		"description": "Este conjunto de pruebas en Postman está diseñado para verificar la interacción entre tres microservicios: **Servicio de Reservas**, **Servicio de Hoteles** y **Servicio de Vuelos**. Estos microservicios trabajan juntos para gestionar reservas de hoteles y vuelos.EndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32224288",
+		"_collection_link": "https://solar-comet-908795.postman.co/workspace/Prueba~6950a2d5-2221-4f2e-bd19-e3f4f31e2824/collection/32224288-b58698e6-d2a5-4f3b-82af-dc38e0f5b626?action=share&source=collection_link&creator=32224288"
+	},
+	"item": [
+		{
+			"name": "Solicitudes funcionales",
+			"item": [
+				{
+					"name": "Todos los hoteles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/hoteles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hoteles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hotel por nombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/hoteles/Hotel Paradise",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hoteles",
+								"Hotel Paradise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Todos los vuelos con asientos disponibles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/vuelos/150",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"vuelos",
+								"150"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualiza asientos reservados de un vuelo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/vuelos/2/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"vuelos",
+								"2",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserta una reserva por JSON",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreCliente\": \"Benjamin Filip\",\r\n    \"dni\": \"X0134567A\",\r\n    \"idHotel\": 1,\r\n    \"idVuelo\": 5,\r\n    \"plazasReservadas\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/reservas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"reservas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reservas por nombre del hotel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/reservas/hotel/Hotel Sunshine",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"reservas",
+								"hotel",
+								"Hotel Sunshine"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Esta carpeta puede contiene solicitudes que se utilizan para realizar operaciones reales en la API y que se sabe que funcionan correctamente"
+		},
+		{
+			"name": "Solicitudes extras",
+			"item": [
+				{
+					"name": "Boolean existe hotel por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/hoteles/id/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hoteles",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Id del hotel por nombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/hoteles/reserva/id/Hotel Paradise",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hoteles",
+								"reserva",
+								"id",
+								"Hotel Paradise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Boolean existe hotel por nombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/hoteles/reserva/nombrehotel/Hotel Paradise",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"hoteles",
+								"reserva",
+								"nombrehotel",
+								"Hotel Paradise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Boolean existe vuelo por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/vuelos/id/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"vuelos",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Boolean avion tiene suficientes plazas disponibles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/vuelos/reservas/1/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"vuelos",
+								"reservas",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pruebas de error ver consola",
+			"item": [
+				{
+					"name": "Fallo reserva id hotel not found",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreCliente\": \"Benjamin Filip\",\r\n    \"dni\": \"X0134567A\",\r\n    \"idHotel\": 6,\r\n    \"idVuelo\": 5,\r\n    \"plazasReservadas\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/reservas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"reservas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fallo reserva id vuelo not found",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreCliente\": \"Benjamin Filip\",\r\n    \"dni\": \"X0134567A\",\r\n    \"idHotel\": 1,\r\n    \"idVuelo\": 6,\r\n    \"plazasReservadas\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/reservas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"reservas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fallo reserva asientos disponibles del avion insuficiente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreCliente\": \"Benjamin Filip\",\r\n    \"dni\": \"X0134567A\",\r\n    \"idHotel\": 1,\r\n    \"idVuelo\": 1,\r\n    \"plazasReservadas\": 180 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/reservas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"reservas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fallo reserva no hay reservas con ese nombre de hotel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/reservas/hotel/Hotel Sunshineeee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"reservas",
+								"hotel",
+								"Hotel Sunshineeee"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Esta carpeta contiene solicitudes diseñadas específicamente para probar cómo maneja la API diferentes tipos de errores o situaciones inesperadas."
+		}
+	]
+}
