@@ -9,11 +9,17 @@ Este repositorio contiene un proyecto centrado en una agencia de viajes. La apli
 
 ## Iniciar el proyecto:
 -Para comenzar, debes clonar este repositorio utilizando el siguiente comando:
+
    ```https://github.com/alex55fc/Microservices-exercise.git```
+   
 -Crear la base de datos con el nombre que tenemos en el `application.properties`
+
 ```sprinbootproyectofinal```
+
 -Inicias uno a uno los microservicios y los mantienes encendidos, se crearan las tablas 
+
 -Por ultimo inserta los datos en las tablas de la carpeta `DDL/inserts.txt` de cada proyecto
+
 -Y a funcionar!
 
 # Entidades
