@@ -9,33 +9,37 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity
-@Table(name="reservas")
-public class Reserva {
+
+public class ReservaDto {
 	
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id_reserva")
 	private int idReserva;
-	@Column(name="nombre_cliente")
 	private String nombreCliente;
 	private String dni;
-	@Column(name="id_hotel")
 	private int idHotel;
-	@Column(name="id_vuelo")
 	private int idVuelo;
+	private int plazasReservadas;
 	
-	
-	public Reserva() {
+	public ReservaDto() {
 		super();
 	}
 	
-	public Reserva( String nombreCliente, String dni, int idHotel, int idVuelo) {
+
+	public ReservaDto( String nombreCliente, String dni, int idHotel, int idVuelo, int plazasReservadas) {
 		super();
 		this.nombreCliente = nombreCliente;
 		this.dni = dni;
 		this.idHotel = idHotel;
 		this.idVuelo = idVuelo;
+		this.plazasReservadas = plazasReservadas;
+	}
+
+	
+	public int getPlazasReservadas() {
+		return plazasReservadas;
+	}
+
+	public void setPlazasReservadas(int plazasReservadas) {
+		this.plazasReservadas = plazasReservadas;
 	}
 
 	public int getIdReserva() {
@@ -80,7 +84,7 @@ public class Reserva {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Reserva other = (Reserva) obj;
+		ReservaDto other = (ReservaDto) obj;
 		return idReserva == other.idReserva;
 	}
 	

@@ -1,0 +1,8 @@
+CREATE TABLE `hotel` (
+  `id_hotel` int NOT NULL AUTO_INCREMENT,
+  `categoria` varchar(255) DEFAULT NULL,
+  `disponible` bit(1) NOT NULL,
+  `nom_hotel` varchar(255) DEFAULT NULL,
+  `precio` double NOT NULL,
+  PRIMARY KEY (`id_hotel`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

@@ -1,5 +1,5 @@
-INSERT INTO hotel (nom_hotel, categoria, precio, disponible) VALUES ('Hotel Paradise', '5 estrellas', 250.0, true);
-INSERT INTO hotel (nom_hotel, categoria, precio, disponible) VALUES ('Hotel Sunshine', '4 estrellas', 180.0, true);
-INSERT INTO hotel (nom_hotel, categoria, precio, disponible) VALUES ('Hotel Budget', '3 estrellas', 90.0, false);
-INSERT INTO hotel (nom_hotel, categoria, precio, disponible) VALUES ('Hotel Luxury', '5 estrellas', 350.0, true);
-INSERT INTO hotel (nom_hotel, categoria, precio, disponible) VALUES ('Hotel Comfort', '4 estrellas', 200.0, false);
+INSERT INTO sprinbootproyectofinal.hotel (nom_hotel, categoria, precio, disponible) VALUES ('Hotel Paradise', '5 estrellas', 250.0, true);
+INSERT INTO sprinbootproyectofinal.hotel (nom_hotel, categoria, precio, disponible) VALUES ('Hotel Sunshine', '4 estrellas', 180.0, true);
+INSERT INTO sprinbootproyectofinal.hotel (nom_hotel, categoria, precio, disponible) VALUES ('Hotel Budget', '3 estrellas', 90.0, false);
+INSERT INTO sprinbootproyectofinal.hotel (nom_hotel, categoria, precio, disponible) VALUES ('Hotel Luxury', '5 estrellas', 350.0, true);
+INSERT INTO sprinbootproyectofinal.hotel (nom_hotel, categoria, precio, disponible) VALUES ('Hotel Comfort', '4 estrellas', 200.0, false);

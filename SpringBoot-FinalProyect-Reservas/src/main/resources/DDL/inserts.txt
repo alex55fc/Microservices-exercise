@@ -1,0 +1,3 @@
+INSERT INTO sprinbootproyectofinal.reservas (nombre_cliente, dni, id_hotel, id_vuelo) VALUES ('Alejandro Barbacil', '12345678A', 2, 5);
+INSERT INTO sprinbootproyectofinal.reservas (nombre_cliente, dni, id_hotel, id_vuelo) VALUES ('Isabel Ares', '87654321B', 2, 5);
+INSERT INTO sprinbootproyectofinal.reservas (nombre_cliente, dni, id_hotel, id_vuelo) VALUES ('Carlos Ruiz', '11111111C', 1, 1);

@@ -8,4 +8,8 @@ public interface HotelService {
 	
 	List<Hotel> hoteles();
 	Hotel datosHotel(String  nomHotel);
+	
+	Boolean existsHotelId(int idHotel);
+	Integer devuelveIdHotelByNombreHotel(String nomHotel);
+	Boolean existsHotelByName(String nomHotel);
 }

@@ -1,0 +1,8 @@
+CREATE TABLE `reservas` (
+  `id_reserva` int NOT NULL AUTO_INCREMENT,
+  `dni` varchar(255) DEFAULT NULL,
+  `id_hotel` int DEFAULT NULL,
+  `id_vuelo` int DEFAULT NULL,
+  `nombre_cliente` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_reserva`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
